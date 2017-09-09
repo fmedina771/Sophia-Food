@@ -3,24 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>React App</title>
-     <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <!--Google Maps: API call is done in this format-->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVq_5rVixXpbEVR3iPtHR5sm6s4ikNxXY&callback=initMap"></script>
-  <!-- External JS -->
-    <script src="./map.js" type="text/javascript"></script>
+    <title>Sugr</title>
+
   </head>
   <body>
+
+    <header class="headWrapper">
+
+      <section>
+        <h1>sugrTrackr</h1>
+      </section>
+
+      <!-- sign-up log-in navigation see upper right-corner -->
+      <section class="navContainer row">
+        <div class="navLabel signInBtn">
+          <button id="btn-Login btnLogin"><img src="./assets/img/key_solid.svg" class="icon" alt="Key icon">
+          <h4> Log in </h4></button>
+        </div>
+
+        <div class="navLabel signUpBtn">
+          <button id="btn-SignUp btnSignUp"><img src="./assets/img/sign-in.svg" class="icon" alt="sign-up icon">
+          <h4> Sign up </h4></button>
+        </div>
+      </section>
+
+        <!-- User logged in status -->
+        <section class="logContainer row">
+          <div class="logIcon">
+            <button id="headIcon"><img src="./assets/img/key_solid.svg" class="head" alt="head icon"></button>
+            </div>
+          <div class="logLabel navLabel">
+            <button id="btnLogout" class="hide">
+              <h4> Log me out </h4></button>
+            </div>
+        </section>
+
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+   
   </body>
 </html>
