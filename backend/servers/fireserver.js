@@ -9,3 +9,4 @@ var config = {
 };
 firebase.initializeApp(config);
 
+module.export = firebase;
