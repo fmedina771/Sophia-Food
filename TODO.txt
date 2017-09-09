@@ -1,0 +1,12 @@
+# Server Setup
+
+1. Create `server.js`
+2. Create an Express `app`
+3. Create an index route that serves `public/index.html`:
+
+```
+app.get("/", function (req, res) {
+  // Serve `public/index.html` from here
+})
+```
+
