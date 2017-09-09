@@ -6,3 +6,5 @@ const UserSchema = {
     "password" : "string",
     "picture " : "url"
 }
+
+module.exports = User;
