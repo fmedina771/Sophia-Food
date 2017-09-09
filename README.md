@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -2162,3 +2163,29 @@ To resolve this:
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+=======
+# Sophia-Money
+Get your money's worth and utilize free services
+
+
+### Dependencies
+```
+"react": "^15.6.1",
+"react-dom": "^15.6.1",
+"react-scripts": "1.0.11"
+```
+
+##Installation
+
+To install the this application locally follow the instructions below:
+
+With the command line:
+
+1. git clone https://github.com/fmedina771/Sophia-Money  
+2. cd Sophia-Money  
+3. npm install  
+4. Run the Sophia-Money in development mode from the command line via `npm start` or `yarn start`
+The Sophia-Money app will run locally, the default port is set to 3000.  
+
+You can now view Sophia-Money in the browser. The app webpage can be access via the url: `http://localhost:3000/`  
+>>>>>>> 9487625ded49a0234329ce9898ce9b4dae2c0917
