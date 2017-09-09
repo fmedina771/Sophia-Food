@@ -20,19 +20,14 @@ module.exports = function(app){
         res.sendFile(path.join(__dirname, "../public/index.html"));
     });
 
-    // questions route loads questions.html
+    // sign-in route loads questions.html
     app.get("/questions", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/questions.html"));
+        res.sendFile(path.join(__dirname, "../public/signIn.html"));
     });
 
-    // profile route loads questions.html
+    // sign-up route loads questions.html
     app.get("/profile", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/profile.html"));
-    });
-
-    // chat route loads chat.html
-    app.get("/chat/index.html", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/chat/index.html"));
+        res.sendFile(path.join(__dirname, "../public/signUp.html"));
     });
 
 }
