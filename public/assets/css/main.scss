@@ -1,0 +1,233 @@
+@import 'var';
+/*@import 'display';
+*/@import 'Modals';
+@import 'search-post';
+@import 'videoBG';
+
+
+
+body {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font: $fontBody;
+}
+
+.headWrapper {
+    padding: 6px 50px 10px;
+    background-color: $bgColor;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    font: $fontLogo;
+    flex: 3;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.SearchWrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.background {
+    background-color: rgba( $modalBG, .7 );
+
+    padding: 20px;
+}
+
+.col-3 {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.flexSize {
+    flex: 3;
+}
+
+.flexSize1 {
+    flex: 1;
+}
+
+.boxStyle {
+    box-sizing: border-box;
+    border: 1px solid $primaryColor;
+    padding: 10px 20px 10px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    /* for input label position*/
+    text-align: center;
+}
+
+p.description {
+        font: $formFont;
+        font-size: .9em;
+        font-weight: 100;
+        margin-bottom: 50px;
+    }
+
+/*  overflow controls the select dropdown arrows*/
+.overflow {
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+/*  universal input field styles on all forms */
+
+input {
+    @extend button;
+    padding: 0;
+    color: $primaryColor !important;
+
+    &::placeholder {
+    font: $formFont;
+    color: $secondaryColor;
+}
+
+/* adds input field name to top of field test */
+
+&:placeholder-shown+label {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+&:focus {
+    outline: none;
+    border-color: #fff;
+}
+}
+
+textarea {
+    width: 100%;
+
+    &:placeholder{
+        text-align: left;
+    }
+}
+
+label {
+    font: $formFont;
+    color: $secondaryColor;
+    background-color: $modalBG;
+    border: 1px solid $primaryColor;
+    border-width: 0 1px 0 1px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    opacity: 1;
+    padding: 0 5px;
+    transition: all 0.35s;
+    transform: translateY(calc(-50% - 1px));
+}
+
+
+/*. Unversal button style for all pages and forms*/
+
+button {
+    box-sizing: border-box;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    font: $formFont;
+    line-height: 1.7;
+    color: #fff;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+button:hover {
+    color: $secondaryColor;
+}
+
+.navLabel button {
+    font: $formFont;
+    color: $primaryColor;
+    height: 40px;
+
+    &:hover {
+    color: $secondaryColor;
+    }
+}
+
+
+.btnLabel {
+    font: $formFont;
+}
+
+.Btn {
+    box-sizing: border-box;
+    border: 1px solid $secondaryColor;
+    background-color: $secondaryColor;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.logContainer {
+    display: none;
+}
+.display {
+    display: flex;
+}
+
+/* icons for hover states */
+.icon {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 20px;
+    height: 17px;
+    transform: translateX(-50%);
+    transition: all .25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.iconDown {
+    z-index: 10;
+    top: 0px;
+}
+
+.titleText {
+    font-size: 2.3em;
+    line-height: 1.25;
+    color: $secondaryColor;
+    margin-bottom: 25px;
+}
+
+select {
+    width: 150%;
+    border: none;
+    background: transparent;
+    appearance: none;
+    text-overflow: clip;
+}
+
+select:focus {
+    outline: none;
+}
+
+#map {
+    height: 300px;
+    filter: grayscale(100%);
+}
+
+@import 'responsive';
+
+
+
+
